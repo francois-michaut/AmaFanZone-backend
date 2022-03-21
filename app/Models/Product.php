@@ -25,7 +25,11 @@ class Product extends CoreModel
     {
             $pdo = Database::getPDO();
 
-            $sql = "SELECT * FROM `products` WHERE `id`>3  LIMIT 5";
+            $sql = "SELECT *
+            FROM `products`
+            INNER JOIN `categories` ON `categories`.`id`= `category_id`
+               LIMIT 3,5
+             ";
 
             $pdoStatement = $pdo->query( $sql );
 

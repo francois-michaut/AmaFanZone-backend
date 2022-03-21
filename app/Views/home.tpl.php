@@ -1,3 +1,4 @@
+<?php dump(get_defined_vars())?>
 <section class="row">
             <h2 class="col-12">
                 Nos dernières nouveautés:
@@ -22,8 +23,8 @@
                 <p>
                     <?= $newProduct['description'] ?>
                 </p>
-                <button class="btn bijoux text-light">
-                    Bijoux
+                <button class="btn <?= $newProduct['category_name'] ?> text-light">
+                   <?= $newProduct['category_name'] ?>
                 </button>
             </article>
           <?php endforeach ?>
