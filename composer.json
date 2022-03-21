@@ -3,5 +3,7 @@
         "symfony/var-dumper": "^5.4",
         "altorouter/altorouter": "^2.0"
     },
-    "autoload": {"AmaFanZone\\": "app/"}
+    "autoload": {
+        "psr-4": {"AmaFanZone\\" : "app/"}
+    }
 }

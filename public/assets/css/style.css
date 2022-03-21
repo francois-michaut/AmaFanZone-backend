@@ -1,0 +1,122 @@
+body
+{
+    font-family:'Merriweather Sans', sans-serif ;
+    background-color: beige;
+}
+.logo img
+{
+    width: 200px;
+    height: 100px;
+}
+img
+{
+    width: 80%;
+    height: 200px;
+}
+header, footer
+{
+    background-color: darkslategrey;
+    padding: 8px;
+}
+.connect-cart a
+{
+    color: white;
+}
+section
+{
+    background-color:burlywood ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+h1
+{
+    margin-top: 20px;
+    color: darkslateblue;
+    font-family: 'Hurricane', cursive;
+    font-size: 60px;
+}
+h2
+{
+    margin-top: 12px;
+    color: darkslateblue;
+    margin-bottom: 20px;
+    font-family: 'Hurricane', cursive;
+    font-size: 40px;
+}
+article
+{
+    border: 2px solid darkslategrey;
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+p
+{
+    margin: 8px;
+}
+.animaux
+{
+    background-color: purple;
+    text-transform: capitalize;
+
+}
+.bijoux
+{
+    background-color: darkred;
+    text-transform: capitalize;
+
+}
+.santé
+{
+    background-color: darkblue;
+    text-transform: capitalize;
+
+}
+.mode
+{
+    background-color: green;
+    text-transform: capitalize;
+
+}
+.sport
+{
+    background-color: tomato;
+    text-transform: capitalize;
+
+}
+.politique
+{
+    background-color: turquoise;
+    text-transform: capitalize;
+
+}
+.arts
+{
+    background-color: rgb(25, 153, 8);
+    text-transform: capitalize;
+
+}
+.produit
+{
+    background-color: rgb(233, 92, 202);
+    text-transform: capitalize;
+
+}
+.cuisine
+{
+    background-color: rgb(9, 9, 61);
+    text-transform: capitalize;
+} 
+.antiquité
+{
+    text-transform: capitalize;
+} 
+h2 a
+{
+    color: white;
+}
+.section-category
+{
+    padding: 12px;
+}
