@@ -28,7 +28,7 @@ class Product extends CoreModel
             $sql = "SELECT *
             FROM `products`
             INNER JOIN `categories` ON `categories`.`id`= `category_id`
-               LIMIT 3,5
+            LIMIT 3,5
              ";
 
             $pdoStatement = $pdo->query( $sql );
