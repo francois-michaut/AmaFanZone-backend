@@ -49,7 +49,7 @@
                 </nav>
             </div>
            
-            <div class="col-4 connect-cart pr-0">
+            <div class="col-lg-2 col-4 connect-cart ">
                 <button class="btn connect-button"><a href="./form.html">Sign in</a></button>
                 <a href="" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewbox="0 0 16 16">

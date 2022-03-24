@@ -1,4 +1,3 @@
-<?php dump(get_defined_vars())?>
 <section class="row">
             <h2 class="col-12">
                 Nos dernières nouveautés:

@@ -42,6 +42,7 @@ h2
     margin-bottom: 20px;
     font-family: 'Hurricane', cursive;
     font-size: 40px;
+    text-transform: capitalize;
 }
 article
 {
@@ -54,6 +55,10 @@ article
 p
 {
     margin: 8px;
+}
+.category
+{
+    border-radius: 20px;
 }
 .animaux
 {

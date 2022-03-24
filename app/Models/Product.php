@@ -12,7 +12,8 @@ class Product extends CoreModel
     {
             $pdo = Database::getPDO();
 
-            $sql = "SELECT * FROM `products` LIMIT 3";
+            
+            $sql = "SELECT * FROM `products` ORDER BY `created_at` DESC LIMIT 3";
 
             $pdoStatement = $pdo->query( $sql );
 
@@ -27,7 +28,7 @@ class Product extends CoreModel
 
             $sql = "SELECT *
             FROM `products`
-            INNER JOIN `categories` ON `categories`.`id`= `category_id`
+            INNER JOIN `categories` ON `categories`.`id`= `category_id` ORDER BY `price`
             LIMIT 3,5
              ";
 
@@ -37,4 +38,30 @@ class Product extends CoreModel
             
             return $products;
     }
+
+    public function findBestproduct()
+    {
+            $pdo = Database::getPDO();
+
+            $sql = "SELECT * FROM `products` ORDER BY `price` LIMIT 5 ";
+            
+            $pdoStatement = $pdo->query( $sql );
+
+            $productList = $pdoStatement->fetchAll( PDO::FETCH_ASSOC );
+
+            return $productList;
+    }
+
+    public function findNewProduct()
+    {
+            $pdo = Database::getPDO();
+
+            $sql = "SELECT * FROM `products` INNER JOIN `categories` ON `categories`.`id`= `category_id` ORDER BY `created_at` DESC LIMIT 5";
+
+            $pdoStatement = $pdo->query( $sql );
+
+            $productList = $pdoStatement->fetchAll( PDO::FETCH_ASSOC );
+
+            return $productList;
+        }
 }
